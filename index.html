@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Light Exercise</title>
+    <style>
+        body {
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: darkslategray;
+        }
+
+        button {
+        min-width: 250px;
+        font-family: helvetica;
+        font-weight: 600;
+        font-size: 20px;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        box-shadow: 5px 5px 15px 5px #00000050;
+        padding: 20px;
+        margin: 20px;
+        cursor: pointer;
+        }
+
+        #lavender {
+        background: lavenderblush;
+        }
+
+        #chartreuse {
+        background: chartreuse;
+        }
+
+        #cornflower {
+        background: cornflowerblue;
+        }
+    </style>
+</head>
+<body>
+    <button onclick="changeColor('lavenderblush')" id="lavender">LAVENDER</button>
+    <button onclick="changeColor('chartreuse')" id="chartreuse">CHARTREUSE</button>
+    <button onclick="changeColor('cornflowerblue')" id="cornflower">CORNFLOWER</button>
+    <script>
+        function changeColor(color) {
+        if (document.querySelector('body').style.backgroundColor !== color) {
+            document.querySelector('body').style.backgroundColor = color;
+        } else {
+            document.querySelector('body').style.backgroundColor = 'darkslategray'};
+        };
+    </script>
+</body>
+</html>
